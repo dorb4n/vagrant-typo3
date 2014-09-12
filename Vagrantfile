@@ -14,5 +14,5 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.synced_folder "./public", "/vagrant", id: "vagrant-root",
     owner: "www-data",
     group: "www-data",
-    mount_options: ["dmode=775,fmode=664"]
+    mount_options: ["dmode=2775,fmode=0664"]
 end

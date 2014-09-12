@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 
 apt-get update
-apt-get install -y apache2 node-less php5 libapache2-mod-php5 php5-curl
+
+apt-get install -y apache2 node-less php5 libapache2-mod-php5 php5-curl php5-gd php5-mysql apache2 php5
 usermod -a -G www-data vagrant
+
+service apache2 restart
 
 if [ ! -h /var/www ];
 then

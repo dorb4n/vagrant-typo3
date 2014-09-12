@@ -1,3 +1,9 @@
+# If you have trouble on the live site, disable the php_value settings!
+php_value upload_max_filesize 30M
+php_value post_max_size 30M
+php_value max_execution_time 240
+php_value display_errors On
+
 #####
 #
 # Example .htaccess file for TYPO3 CMS - for use with Apache Webserver
