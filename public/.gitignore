@@ -1,1 +1,8 @@
 FIRST_INSTALL
+sftp-config.php
+typo3temp/
+
+# delete the following lines to keep settings and uploaded files in your git repo
+fileadmin/
+typo3conf/
+uploads/
