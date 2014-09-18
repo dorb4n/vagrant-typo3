@@ -1,3 +1,6 @@
 [submodule "public/TYPO3.CMS"]
 	path = public/TYPO3.CMS
 	url = git://git.typo3.org/Packages/TYPO3.CMS.git
+[submodule "public/fileadmin/templates"]
+	path = public/fileadmin/templates
+	url = https://github.com/dorb4n/typo3-basesetup.git

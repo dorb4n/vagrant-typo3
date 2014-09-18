@@ -15,4 +15,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     owner: "www-data",
     group: "www-data",
     mount_options: ["dmode=2775,fmode=0664"]
+    
+  config.vm.provider :virtualbox do |vb, override|
+    vb.gui = false
+    vb.customize ['modifyvm', :id, '--memory', '1024']
+    vb.customize ['modifyvm', :id, '--cpus', '4']
+  end
 end
