@@ -19,6 +19,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provider :virtualbox do |vb, override|
     vb.gui = false
     vb.customize ['modifyvm', :id, '--memory', '1024']
-    vb.customize ['modifyvm', :id, '--cpus', '4']
+    vb.customize ['modifyvm', :id, '--cpus', '1']
   end
 end
